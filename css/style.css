@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/* Overall */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+nav {
+    background: #8072c5;
+    height: 80px;
+    width: 100%;
+}
+
+.nav-text {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    line-height: 80px;
+    padding: 0 20px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    line-height: 80px;
+    padding: 0 10px;
+    display: inline-block;
+    list-style: none;
+    font-weight: bold;
+    
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+a.active,
+a:hover {
+    background: #8f83c8;
+    transition: .5s;
+
+}
+
+.checkbtn {
+    font-size: 20px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~ul {
+    left: 0;
+}
+
+.search-area{
+    height: 50px;
+}
+
+#word-search{
+    border: 1px solid grey;
+}
+
+#pronounciation{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.partOfSpeech{
+    font-size: 30px;
+}
+.ps-definition{
+    font-size: 25px;
+}
+.example{
+    font-size: 25px;
+}
